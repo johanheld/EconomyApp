@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EconomyApp</string>
+    <string name="name">Namn</string>
+    <string name="category">Kategori</string>
+    <string name="sum">Belopp</string>
+    <string name="title">Titel</string>
+    <string name="add">Lägg till</string>
+    <string name="expense">Utgift</string>
+    <string name="salary">Lön</string>
+    <string name="field_error">Alla fält måste fyllas i</string>
+
+    <string-array name="categories_array">
+        <item>Mat</item>
+        <item>Nöje</item>
+        <item>Transport</item>
+        <item>Shopping</item>
+        <item>Övrigt</item>
+    </string-array>
+
+    <string-array name="drawer_array">
+        <item>Start</item>
+        <item>Överföringar</item>
+        <item>Ny Överföring</item>
+    </string-array>
+
+    <string-array name="income_array">
+        <item>Lön</item>
+        <item>Övrigt</item>
+    </string-array>
+    <string name="sign_up">REGISTRERA</string>
+    <string name="balance">Saldo</string>
+</resources>

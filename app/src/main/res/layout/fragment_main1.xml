@@ -1,0 +1,101 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:orientation="horizontal"
+                                             tools:context="com.example.johan.economyapp.MainFragment1"
+                                             android:weightSum="1"
+                                             tools:layout_editor_absoluteY="25dp"
+                                             tools:layout_editor_absoluteX="0dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tvBalance"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/tvExpenses"
+        app:layout_constraintRight_toRightOf="@+id/tvExpenses"
+        app:layout_constraintTop_toBottomOf="@+id/tvExpenses"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"/>
+
+    <TextView
+        android:id="@+id/tvExpenses"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/tvIncome"
+        app:layout_constraintRight_toRightOf="@+id/tvIncome"
+        app:layout_constraintTop_toBottomOf="@+id/tvIncome"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"/>
+
+    <com.example.johan.economyapp.ExtendedTextView
+        android:id="@+id/tvName"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="67dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1"/>
+
+    <TextView
+        android:id="@+id/tvIncome"
+        android:layout_width="164dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="@+id/tvName"
+        app:layout_constraintRight_toRightOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"/>
+
+    <EditText
+        android:id="@+id/etFirstDate"
+        android:layout_width="136dp"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_marginRight="32dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="67dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:focusableInTouchMode="false"
+        />
+
+    <EditText
+        android:id="@+id/etSecondDate"
+        android:layout_width="136dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etFirstDate"
+        tools:layout_constraintTop_creator="1"
+        android:focusableInTouchMode="false"/>
+
+</android.support.constraint.ConstraintLayout>

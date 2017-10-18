@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.johan.economyapp.MainActivity">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="384dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="-14dp"
+            android:background="?android:attr/colorBackground"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fragment2"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+        <fragment
+            android:id="@+id/fragment2"
+            android:name="com.example.johan.economyapp.MainFragment1"
+            android:layout_width="409dp"
+            android:layout_height="206dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout="@layout/fragment_main1"
+            android:layout_marginEnd="8dp"
+            />
+
+        <FrameLayout
+            android:id="@+id/fragmentFrame"
+            android:layout_width="match_parent"
+            android:layout_height="327dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="-7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fragment2">
+        </FrameLayout>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="mini"
+            app:layout_constraintHorizontal_bias="0.904"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@android:drawable/ic_input_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="34dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignEnd="@+id/fragment2"
+            android:layout_marginEnd="20dp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/left_drawer"
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left|start"
+        android:background="@color/colorPrimaryDark"
+        android:choiceMode="singleChoice"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="0dp"/>
+
+</android.support.v4.widget.DrawerLayout>
